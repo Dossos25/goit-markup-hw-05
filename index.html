@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- #region Header -->
     <header class="page-header">
         <div class="container header-container">
             <nav class="nav-header">
@@ -47,19 +47,19 @@
         </div>
 
     </header>
-    <!-- end Header -->
+    <!-- #endregion Header -->
 
     <main>
-        <!-- Section 1 hero -->
+        <!-- #region Section 1 hero -->
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title ingredirnts-title">Effective Solutions for Your Business</h1>
                 <button type="button" class="hero-btn">Order Service</button>
             </div>
         </section>
-        <!-- end Section 1 hero -->
+        <!-- #endregion Section 1 hero -->
 
-        <!-- Section 2 -->
+        <!-- #region Section 2 -->
         <section class="advantages section">
             <div class="container">
                 <h2 class="visually-hidden">Advantages</h2>
@@ -124,9 +124,9 @@
                 </ul>
             </div>
         </section>
-        <!-- end Section 2 -->
+        <!-- #endregion Section 2 -->
 
-        <!-- Section 3 Our Team -->
+        <!-- #region Section 3 Our Team -->
         <section class="our-team section">
             <div class="container">
                 <h2 class="our-team-title">Our Team</h2>
@@ -282,9 +282,9 @@
                 </ul>
             </div>
         </section>
-        <!-- end Section 3 Our Team -->
+        <!-- #endregion Section 3 Our Team -->
 
-        <!-- Section 4 Our Portfolio -->
+        <!-- #region Section 4 Our Portfolio -->
         <section class="our-portfolio section">
             <div class="container">
                 <h2 class="our-portfolio-title">Our Portfolio</h2>
@@ -369,10 +369,11 @@
                 </ul>
             </div>
         </section>
-        <!-- end Section 4 Our Portfolio -->
+        <!-- #endregion Section 4 Our Portfolio -->
 
     </main>
 
+    <!-- #region Footer -->
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-paragraf">
@@ -419,6 +420,68 @@
 
         </div>
     </footer>
+    <!--#endregion Footer -->
+
+    <!-- #region Backdrop -->
+    <div class="backdrop is-open">
+        <div class="modal">
+            <button class="close-btn" type="button">
+                <svg class="close-btn-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-dagger" class="close-btn-use"></use>
+                </svg>
+            </button>
+            <p class="modal-text">Leave your contacts and we will call you back</p>
+            <form class="modal-form">
+                <div class="modal-blok">
+                    <label class="modal-form-lab" for="user-name">Name</label>
+                    <div class="modal-form-input-cont">
+                        <input class="modal-form-input" required id="user-name" name="user-name"
+                            placeholder="Nane input" type="text">
+                        <svg class="model-form-icons" width="12" height="12">
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-blok">
+                    <label class="modal-form-lab" for="user-phone">Phone</label>
+                    <div class="modal-form-input-cont">
+                        <input class="modal-form-input" required id="user-phone" name="user-phone"
+                            placeholder="Phone input" type="tel">
+                        <svg class="model-form-icons" width="13" height="13">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-blok">
+                    <label class="modal-form-lab" for="user-email">Email</label>
+                    <div class="modal-form-input-cont">
+                        <input class="modal-form-input" required id="user-email" name="user-email"
+                            placeholder="Email input" type="email">
+                        <svg class="model-form-icons" width="15" height="12">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-blok">
+                    <label class="modal-form-lab" for="user-comment">Comment</label>
+                    <div class="modal-form-input-cont">
+                        <input class="modal-form-input modal-form-comment" required id="user-comment"
+                            name="user-comment" placeholder="Text input" type="text">
+                    </div>
+                </div>
+                <div class="modal-form-cont-checkbox">
+                    <input type="checkbox" class="checkbox visually-hidden" id="user-checkbox">
+                    <label class="label-checkbox" for="user-checkbox"><span class="custom-checkbox">
+                            <svg width="10" height="8">
+                                <use href="./images/icons.svg#icon-check-mark"></use>
+                            </svg>
+                        </span>I accept the terms and conditions of the <a href="#">Privacy Policy</a></label>
+                </div>
+                <button type="submit" class="modal-btn">Send</button>
+            </form>
+        </div>
+    </div>
+    <!-- #endregion Backdrop -->
 </body>
 
 </html>
