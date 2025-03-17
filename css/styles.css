@@ -599,7 +599,9 @@ button {
 .close-btn:hover {
     background-color: #404bbf;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #fff;
+    border: none;
 }
 .close-btn-icon {
     
@@ -607,7 +609,9 @@ button {
 
 .close-btn-icon:focus,
 .close-btn-icon:hover {
+    border: none;
     fill: #fff;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn-use {
@@ -642,11 +646,11 @@ button {
     font-weight: 400;
     font-size: 12px;    
     /* line-height: 14px; */ 
-    line-height: 1.16667;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
     
 }
 
