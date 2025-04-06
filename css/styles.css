@@ -572,7 +572,8 @@ button {
     0px 1px 3px rgba(0, 0, 0, 0.12), 
     0px 2px 1px rgba(0, 0, 0, 0.2);
     transform: translate(-50%, -50%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 /* #region Batton */
 .close-btn {
@@ -593,6 +594,8 @@ button {
     border-radius: 50%;
     background-color: #e7e9fc;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn:focus,
@@ -604,6 +607,7 @@ button {
     border: none;
 }
 .close-btn-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     
 }
 
@@ -668,6 +672,8 @@ button {
     height: 40px;
     padding-left: 38px;
     outline: transparent;
+    background-color: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input:focus {
@@ -704,12 +710,20 @@ button {
     margin-bottom: 16px;
 }
 .modal-textarea{
+    font-size: 12px; 
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     width: 360px;
     height: 120px;    
-    padding-left: 16px;
     outline: transparent;
+    background-color: transparent;
+    padding: 8px 16px;
+    resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .modal-textarea:focus {
@@ -743,6 +757,8 @@ button {
 }
 
 .checkbox{}
+
+.modal-label-checkbox{}
 
 .label-checkbox{
     cursor: pointer;
