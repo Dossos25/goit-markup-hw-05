@@ -649,7 +649,7 @@ button {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    display: block;
+    display: inline-block;
     margin-bottom: 4px;
     
 }
@@ -668,6 +668,8 @@ button {
     height: 40px;
     padding-left: 38px;
     outline: transparent;
+    background-color: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-input:focus {
@@ -694,7 +696,7 @@ button {
     fill: #2e2f42;
 }
 
-.modal-form-input:focus+.model-form-icons {
+.modal-form-input:focus + .model-form-icons {
     fill: #4d5ae5;
 }
 
