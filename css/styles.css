@@ -643,13 +643,13 @@ button {
 }
 
 .modal-form-lab {
+    display: block;
     font-weight: 400;
     font-size: 12px;    
     /* line-height: 14px; */ 
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    display: inline-block;
     margin-bottom: 4px;
     
 }
@@ -688,9 +688,10 @@ button {
 .model-form-icons {    
     position: absolute;
     top: 50%;
-    left: 19px;
+    left: 16px;
     transform: translateY(-50%);
     fill: transparent;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: #2e2f42;
 }
 
@@ -698,14 +699,26 @@ button {
     fill: #4d5ae5;
 }
 
-.modal-form-comment {
-    height: 120px;
+
+.modal-blok-textarea{
+    margin-bottom: 16px;
+}
+.modal-textarea{
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    width: 360px;
+    height: 120px;    
     padding-left: 16px;
-    top: 100%;
-    
+    outline: transparent;
 }
 
-.modal-textarea{}
+.modal-textarea:focus {
+    border: 1px solid #4d5ae5;
+}
+
+.modal-form-cont-checkbox{
+    margin-bottom: 24px;
+}
 
 .custom-checkbox{
     border-radius: 2px;
@@ -716,6 +729,7 @@ button {
     justify-content: center;
     align-items: center;
     margin-right: 8px;
+    fill: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
     border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -736,7 +750,7 @@ button {
 font-size: 12px;
 
 /* line-height: 14px; */ 
-line-height: 1.16667;
+line-height: 1.17;
 letter-spacing: 0.04em;
 color: #8e8f99;
 }
