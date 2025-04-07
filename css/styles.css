@@ -621,26 +621,26 @@ button {
 }
 
 
-.backdrop.is-open{
+/* .is-open{
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 
-/* .backdrop {
-    
+.backdrop {
+    /* any styles */
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-} */
+}
 
-  /* .backdrop.is-open {
+.backdrop.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-} */
+  }
   
 .modal {
     border-radius: 4px;
