@@ -584,11 +584,18 @@ button {
     letter-spacing: 0.04em;
     text-align: center;
     color: #fff;   
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-btn:hover,
+.footer-btn:focus {
+    background-color: #404bbf;
 }
 
 .footer-btn-icon{
     margin-left: 16px;
     fill: #fff;
+    stroke: #fff; 
 }
 
 .footer-btn-use{
@@ -619,7 +626,7 @@ button {
 }
 
 
-.backdrop {
+  .backdrop {
     /* any styles */
     opacity: 0;
     visibility: hidden;
@@ -630,7 +637,7 @@ button {
     visibility: visible;
     pointer-events: auto;
   }
-  
+
 .modal {
     border-radius: 4px;
     min-height: 584px;
