@@ -627,12 +627,12 @@ button {
 
 
   .backdrop {
-    /* any styles */
+    /* any styles
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
   }
-  .backdrop.is-open {
+  .backdrop.is-open { */
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -860,7 +860,7 @@ color: #8e8f99;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     min-width: 169px;
     height: 56px;
-    margin: 24px auto 24px;
+    margin: 24px auto 0px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
